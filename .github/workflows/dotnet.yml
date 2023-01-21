@@ -18,15 +18,6 @@ jobs:
     
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
-
-    - name: Setup NuGet.exe for use with actions
-      uses: NuGet/setup-nuget@v1.1.1
-      with:
-        nuget-api-key: ${{ secrets.NuGetAPIKey }}
-        nuget-version: '5.x'
-      
-    - name: Restore dependencies
-      run: nuget restore PreroundSpectator.sln
       
     - name: Build
       run: dotnet build --no-restore
