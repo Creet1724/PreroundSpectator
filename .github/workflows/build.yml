@@ -26,4 +26,4 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: PreroundSpectator-snapshot
-        path: D:\a\PreroundSpectator\PreroundSpectator\
+        path: D:\a\PreroundSpectator\PreroundSpectator\PreroundSpectator\bin\Debug\PreroundSpectator.dll
